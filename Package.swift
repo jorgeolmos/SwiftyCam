@@ -2,6 +2,18 @@
 
 import PackageDescription
 
+)
 let package = Package(
-    name: "SwiftyCam"
+        name: "SwiftyCam",
+        products: [
+            .library(name: "SwiftyCam", type: .dynamic, targets: ["SwiftyCam"])
+        ],
+        targets: [
+            /// Module targets
+            .target(name: "SwiftyCam", dependencies: [], path: "Sources/SwiftyCam"),
+
+            /// Tests
+            .testTarget(name: "SwiftyCamTests", dependencies: ["SwiftyCam"], path: "Tests/SwiftyCamTests")
+        ],
+        swiftLanguageVersions: [.v5_2]
 )
