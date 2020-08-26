@@ -10,10 +10,10 @@ let package = Package(
         ],
         targets: [
             /// Module targets
-            .target(name: "SwiftyCam", dependencies: [], path: "Sources/SwiftyCam"),
+            .target(name: "SwiftyCam", dependencies: [], path: "Source"),
 
             /// Tests
-            .testTarget(name: "SwiftyCamTests", dependencies: ["SwiftyCam"], path: "Tests/SwiftyCamTests")
+            //.testTarget(name: "SwiftyCamTests", dependencies: ["SwiftyCam"], path: "Tests/SwiftyCamTests")
         ],
         swiftLanguageVersions: [.v4_2]
 )
