@@ -15,5 +15,5 @@ let package = Package(
             /// Tests
             .testTarget(name: "SwiftyCamTests", dependencies: ["SwiftyCam"], path: "Tests/SwiftyCamTests")
         ],
-        swiftLanguageVersions: [.v5_2]
+        swiftLanguageVersions: [.v4_2]
 )
